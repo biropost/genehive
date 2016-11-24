@@ -1,0 +1,38 @@
+p {
+font-size: 14pt !important;
+}
+
+.nopad {
+	padding: 0px !important;
+}
+
+.nomarg {
+	margin: 0px !important;
+}
+
+
+li {
+	font-size: 14pt;
+	padding: 10px;
+}
+
+h2 {
+	padding-bottom: 10px;
+}
+
+
+.fa-play-circle{
+	margin-top: 5px;
+}
+
+
+ @font-face {
+  font-family: 'besom';
+  src: url('Besom-free-font.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+	font-family: besom!important;
+}
