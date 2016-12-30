@@ -1,7 +1,7 @@
 <?php include("Environment.php"); ?>
 <?php
 
-$n = 8;
+$n = 10;
 $popsize = 5000;
 $gencnt = 5000;
 $tmsize = 500;
