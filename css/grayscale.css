@@ -1,8 +1,18 @@
+
 /*!
  * Start Bootstrap - Grayscale v3.3.7+1 (http://startbootstrap.com/template-overviews/grayscale)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+
+.intro-body>h1{
+  font-size: 500px!important;
+}
+
+.tab-pane > .container{
+  padding: 20px;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -56,7 +66,7 @@ a:focus {
   background-color: black;
 }
 .navbar-custom .navbar-toggle {
-    border-radius: 10px;
+  border-radius: 10px;
   color: white;
   background-color: rgba(255, 255, 255, 0.2);
   font-size: 12px;
@@ -75,7 +85,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom a {
-    border-radius: 10px;
+  border-radius: 10px;
   color: white;
 }
 .navbar-custom .nav li a {
@@ -101,12 +111,14 @@ a:focus {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-    border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.12);
-
+  text-shadow: 0px 0px 6px #ffffff;
+      -webkit-transition: text-shadow 0.5s ease-in-out;
+    -moz-transition: text-shadow 0.5s ease-in-out;
+    transition: text-shadow 0.5s ease-in-out;
 }
+
 .navbar-custom .nav li.active a:hover {
-    border-radius: 10px;
+  border-radius: 10px;
   color: white;
 }
 @media (min-width: 768px) {
@@ -125,20 +137,35 @@ a:focus {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
-.intro {
+.intro-body-dna{
   display: table;
   width: 100%;
   height: auto;
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.png) no-repeat bottom center scroll;
-  background-color: black;
+  background: url(img/intro-bg-dame.png) no-repeat bottom center scroll;
+  background-color: white!important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
+.intro-body-ant{
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  background: url(img/intro-bg-ant.jpg) no-repeat bottom center scroll;
+  background-color: white!important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
 .intro .intro-body {
   display: table-cell;
   vertical-align: middle;
@@ -146,6 +173,11 @@ a:focus {
 .intro .intro-body .brand-heading {
   font-size: 70px;
 }
+
+.ant-heading {
+font-size: 120px;
+}
+
 .intro .intro-body .intro-text {
   font-size: 14px!important;
   color: black;
@@ -163,27 +195,30 @@ a:focus {
     font-size: 16px!important;
   }
 }
+
 .btn-circle {
   width: 70px;
   height: 70px;
-
-  padding: 7px 16px;
-  border: 4px dotted white;
+  padding: 0px;
   border-radius: 100% !important;
   font-size: 40px;
-  color: white;
+  color: black;
   background: transparent;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-
-
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+  -webkit-transition: box-shadow 1s ease-in-out;
+  -moz-transition: box-shadow 1s ease-in-out;
+  transition: box-shadow 1s ease-in-out;
 }
+
+.btn-circle > span {
+  padding-top: 15px;
+}
+
 .btn-circle:focus, .btn-circle:hover{  
-  padding-top: 10px;
-  border:none;
-  outline: none;
-  color: white;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  color:white;
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -231,37 +266,7 @@ a:focus {
     transform: scale(1);
   }
 }
-.content-section {
-  padding-top: 100px;
-}
-.download-section {
-  width: 100%;
-  padding: 50px 0;
-  color: white;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-#map {
-  width: 100%;
-  height: 200px;
-  margin-top: 100px;
-}
-@media (min-width: 767px) {
-  .content-section {
-    padding-top: 150px;
-  }
-  .download-section {
-    padding: 100px 0;
-  }
-  #map {
-    height: 400px;
-    margin-top: 150px;
-  }
-}
+
 .btn {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -270,6 +275,7 @@ a:focus {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 .btn-default {
   border: 1px solid #42DCA3;
   color: #42DCA3;
@@ -291,6 +297,9 @@ ul.banner-social-buttons {
   }
 }
 @media (max-width: 767px) {
+  .ant-heading {
+font-size: 70px;
+}
   ul.banner-social-buttons li {
     display: block;
     margin-bottom: 20px;
@@ -300,28 +309,4 @@ ul.banner-social-buttons {
     margin-bottom: 0;
   }
 }
-footer {
-  padding: 50px 0;
-}
-footer p {
-  margin: 0;
-}
-::-moz-selection {
-  text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
-}
-::selection {
-  text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
-}
-img::selection {
-  background: transparent;
-}
-img::-moz-selection {
-  background: transparent;
-}
-body {
-  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
-}
+
