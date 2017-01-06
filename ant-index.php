@@ -39,7 +39,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 <!-- Navigation -->
-    <?php include('navbar.php');?>
+    <?php include('navbar_ant.php');?>
 <!-- /.Navigation -->
 
 <!-- startpage -->
