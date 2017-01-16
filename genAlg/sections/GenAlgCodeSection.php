@@ -21,42 +21,42 @@
                             <li>
                                 <a href="#section-shape-1">
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
-                                    <span>NQClient</span>
+                                    <span>NQClient.cpp</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#section-shape-2">
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
-                                    <span>Environment</span>
+                                    <span>Environment.h</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#section-shape-3">
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
-                                    <span>NQPopulation</span>
+                                    <span>NQPopulation.h</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#section-shape-4">
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
-                                    <span>Population</span>
+                                    <span>Population.h</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#section-shape-5">
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
-                                                                        <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
+                                    <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
 
-                                    <span>NQChromosome</span>
+                                    <span>NQChromosome.h</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#section-shape-6">
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
-                                    <span>Chromosome1D</span>
+                                    <span>Chromosome1D.h</span>
                                 </a>
                             </li>
                         </ul>

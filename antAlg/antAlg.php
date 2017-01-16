@@ -16,4 +16,8 @@
                 </div>
             </div>
         </div>
-    
+
+        <!-- AntAlgCodeSection -->
+        <section id="documentation" class="content-section text-center">
+            <?php include('antAlg/sections/AntAlgCodeSection.php');?>
+        </section>

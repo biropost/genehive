@@ -21,53 +21,61 @@
                             <li>
                                 <a href="#section-shape-1">
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
-                                    <span>NQClient</span>
+                                    <span>ACOMain.cpp</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#section-shape-2">
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
-                                    <span>Environment</span>
+                                    <span>ACO.h</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#section-shape-3">
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
-                                    <span>NQPopulation</span>
+                                    <span>Ant.h</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#section-shape-4">
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
-                                    <span>Population</span>
+                                    <span>Edge.h</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#section-shape-5">
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
-                                                                        <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
-
-                                    <span>NQChromosome</span>
+                                    <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
+                                    <span>Node.h</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#section-shape-6">
                                     <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
-                                    <span>Chromosome1D</span>
+                                    <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
+                                    <span>Path.h</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section-shape-7">
+                                    <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
+                                    <svg viewBox="0 0 80 60" preserveAspectRatio="none"><use xlink:href="#tabshape"></use></svg>
+                                    <span>txtfilereader.h</span>
                                 </a>
                             </li>
                         </ul>
                     </nav>
                     <div class="content-wrap">
-                        <section id="section-shape-1"><small><?php include('genAlg/genAlg_Code/NQClient.php');?></small></section>
-                        <section id="section-shape-2"> <small><?php include('genAlg/genAlg_Code/Environment.php');?></small></section>
-                        <section id="section-shape-3"><small><?php include('genAlg/genAlg_Code/NQPopulation.php');?></small></section>
-                        <section id="section-shape-4"><small><?php include('genAlg/genAlg_Code/Population.php');?></small></section>
-                        <section id="section-shape-5"><small><?php include('genAlg/genAlg_Code/NQChromosome.php');?></small></section>
-                        <section id="section-shape-6"><small><?php include('genAlg/genAlg_Code/Chromosome1D.php');?></small></section>
+                        <section id="section-shape-1"><small><?php include('antAlg/antAlg_Code/ACOMain.php');?></small></section>
+                        <section id="section-shape-2"> <small><?php include('antAlg/antAlg_Code/ACO.php');?></small></section>
+                        <section id="section-shape-3"><small><?php include('antAlg/antAlg_Code/Ant.php');?></small></section>
+                        <section id="section-shape-4"><small><?php include('antAlg/antAlg_Code/Edge.php');?></small></section>
+                        <section id="section-shape-5"><small><?php include('antAlg/antAlg_Code/Node.php');?></small></section>
+                        <section id="section-shape-6"><small><?php include('antAlg/antAlg_Code/Path.php');?></small></section>
+                        <section id="section-shape-7"><small><?php include('antAlg/antAlg_Code/txtfilereader.php');?></small></section>
                     </div><!-- /content -->
                 </div><!-- /tabs -->
             </section>
@@ -82,6 +90,16 @@
                 });
 
             })();
+        </script>
+
+        <script type="text/javascript" src="js/js-syntaxhighlighter/shCore.js"></script>
+        <script type="text/javascript" src="js/js-syntaxhighlighter/shBrushCpp.js"></script>
+        <script type="text/javascript" src="js/js-syntaxhighlighter/shBrushPlain.js"></script>
+        <link href="css/syntaxhighlighter/shCore.css" rel="stylesheet" type="text/css" />
+        <link href="css/syntaxhighlighter/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+        <script type="text/javascript">
+            SyntaxHighlighter.all()
         </script>
 
 
