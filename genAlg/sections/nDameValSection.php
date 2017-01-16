@@ -51,7 +51,14 @@
 
             if ($nqueen->getAnswer()) {
                 $strAnswer = $nqueen->getStrAnswer();
-                echo $strAnswer;
+                echo $strAnswer . "<br>";
+
+                # this is just in case you need each values
+                # it is an array with the size of n
+                #so, have fun decorating :) i'm counting on you
+                for($i=0; $i<$n; $i++)
+                    echo $nqueen->getAnswer()[$i] . " ";
+                echo "<br>";
             } else {
                 echo "meh";
             }
