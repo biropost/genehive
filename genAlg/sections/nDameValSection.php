@@ -19,8 +19,10 @@
             </div>
         </div>
 
-    <?php include('genAlg/genAlg_Code/Environment.php');?>
     <?php
+        #include('genAlg/genAlg_Code/Environment.php');
+        require_once('genAlg/genAlg_Code/Environment.php');
+
         if (!empty($_POST)) {
             $n = $_POST['n'] + 0;
             if ($n > 30) # set maximum n
