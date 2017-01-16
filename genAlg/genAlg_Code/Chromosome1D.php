@@ -1,71 +1,70 @@
-	<p>
-		#ifndef ParaException<br>
-	#define ParaException<br>
+<script type="syntaxhighlighter" class="brush: cpp; toolbar: false;"><![CDATA[
+    #ifndef ParaException
+	#define ParaException
 
-	class ParameterAgainstNatureException : public std::exception {<br>
-	public:<br>
-		virtual const char* what() const noexcept override {<br>
-			return "Something goes against nature. Object cannot be casted.";<br>
-		}<br>
-	};<br>
-	#endif // ParaException<br>
+	class ParameterAgainstNatureException : public std::exception {
+	public:
+        &nbsp;virtual const char* what() const noexcept override {
+        &nbsp;&nbsp;return "Something goes against nature. Object cannot be casted.";
+        &nbsp;}
+	};
+	#endif // ParaException
 
 
-	#ifndef CHROMOSOME1D_H<br>
-	#define CHROMOSOME1D_H<br>
+	#ifndef CHROMOSOME1D_H
+	#define CHROMOSOME1D_H
 
-	#include <iostream><br>
-	#include <cstdlib><br>
-	#include <cmath><br>
-	#include <string><br>
-	#include <time.h><br>
+	#include <iostream>
+	#include <cstdlib>
+	#include <cmath>
+	#include <string>
+	#include <time.h>
 
-	template <typename E><br>
-	class Chromosome1D {<br>
-		int fitness;<br>
-		int geneCount;<br>
-		E *genes; // represent gene/position/value in form of an array, datatype can be varied<br>
+	template <typename E>
+	class Chromosome1D {
+		int fitness;
+		int geneCount;
+		E *genes; // represent gene/position/value in form of an array, datatype can be varied
 
-	public:<br>
-		// class constructor: construct a dynamic array of genes<br>
-		Chromosome1D(int geneCount) {<br>
-			if(geneCount <= 0) throw ParameterAgainstNatureException();<br>
-			this->geneCount = geneCount;<br>
-			genes = new E[geneCount];<br>
+	public:
+		// class constructor: construct a dynamic array of genes
+		Chromosome1D(int geneCount) {
+			if(geneCount <= 0) throw ParameterAgainstNatureException();
+			this->geneCount = geneCount;
+			genes = new E[geneCount];
 
-			for (int i=0; i < geneCount; i++)<br>
-				genes[i] = (int)((rand()%geneCount));<br>
+			for (int i=0; i < geneCount; i++)
+				genes[i] = (int)((rand()%geneCount));
 
-			this->fitness = -1; //fitness unknown<br>
-		}<br>
+			this->fitness = -1; //fitness unknown
+		}
 
-		Chromosome1D(const Chromosome1D *other)<br>
-				: fitness(other->fitness), geneCount(other->geneCount), genes(new E[other->geneCount]) {<br>
-			std::copy(other->genes, other->genes + other->geneCount, genes);<br>
-		}<br>
+		Chromosome1D(const Chromosome1D *other)
+				: fitness(other->fitness), geneCount(other->geneCount), genes(new E[other->geneCount]) {
+			std::copy(other->genes, other->genes + other->geneCount, genes);
+		}
 
-		// class destructor is virtual, and can be overridden<br>
-		virtual ~Chromosome1D() { delete [] genes; }<br>
+		// class destructor is virtual, and can be overridden
+		virtual ~Chromosome1D() { delete [] genes; }
 
-		int getFitness() const { return fitness; }<br>
-		void setFitness(int newFitness) { fitness = newFitness; }<br>
+		int getFitness() const { return fitness; }
+		void setFitness(int newFitness) { fitness = newFitness; }
 
-		int getGeneCount() const { return geneCount; }<br>
-		void setGeneCount(int newGeneCount) { geneCount = newGeneCount; }<br>
+		int getGeneCount() const { return geneCount; }
+		void setGeneCount(int newGeneCount) { geneCount = newGeneCount; }
 
-		E* getGenes() { return genes; }<br>
-		E getGenes(const int pos) const { return genes[pos]; }<br>
-		void setGenes(const E* newGenes) { genes = newGenes; }<br>
-		void setGenes(const int pos, E newVal) { genes[pos] = newVal; }<br>
+		E* getGenes() { return genes; }
+		E getGenes(const int pos) const { return genes[pos]; }
+		void setGenes(const E* newGenes) { genes = newGenes; }
+		void setGenes(const int pos, E newVal) { genes[pos] = newVal; }
 
-		virtual void evaluate() = 0;<br>
-		/* virtual void crossover(Chromosome1D *chromosome) {<br>
-			throw "Cannot match chromosome type.";<br>
-		} */<br>
-		virtual bool mutate(double prob) = 0;<br>
-		virtual std::string toString() = 0;<br>
-	};<br>
+		virtual void evaluate() = 0;
+		/* virtual void crossover(Chromosome1D *chromosome) {
+			throw "Cannot match chromosome type.";
+		} */
+		virtual bool mutate(double prob) = 0;
+		virtual std::string toString() = 0;
+	};
 
-	#endif // CHROMOSOME1D_H<br>
-
-	</p>
+	#endif // CHROMOSOME1D_H
+]]></script>

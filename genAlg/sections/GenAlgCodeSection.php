@@ -84,6 +84,16 @@
             })();
         </script>
 
+        <script type="text/javascript" src="js/js-syntaxhighlighter/shCore.js"></script>
+        <script type="text/javascript" src="js/js-syntaxhighlighter/shBrushCpp.js"></script>
+        <script type="text/javascript" src="js/js-syntaxhighlighter/shBrushPlain.js"></script>
+        <link href="css/syntaxhighlighter/shCore.css" rel="stylesheet" type="text/css" />
+        <link href="css/syntaxhighlighter/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+        <script type="text/javascript">
+            SyntaxHighlighter.all()
+        </script>
+
 
 </div>
 <br>

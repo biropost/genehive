@@ -1,44 +1,46 @@
-	#ifndef ParaException<br>
-	#define ParaException<br>
-<br>
-	class ParameterAgainstNatureException : public std::exception {<br>
-	public:<br>
-		virtual const char* what() const noexcept override { <br>
-			return "Something goes against nature. Object cannot be casted.";<br>
-		}<br>
-	};<br>
-	#endif // ParaException<br>
-<br>
-	#ifndef Population_H<br>
-	#define Population_H<br>
-<br>
-	#include <iostream><br>
-	#include <cstdlib><br>
-	#include <time.h><br>
-<br>
-	class Population {<br>
-		/*<br>
-		* note that the chromosomes should be declared in the derived class, due to the various approaches<br>
-		* in various problems, we cannot generalize chromosome type in the mother abstract class<br>
-		*/<br>
-<br>
-		int size; // population size, number of chromosomes in the system<br>
-	public:<br>
-		// class constructor<br>
-		Population(int size) {<br>
-			if (size <= 0) throw ParameterAgainstNatureException();<br>
-<br>
-			this->size = size; <br>
-		} <br>
-		virtual ~Population() { }<br>
-<br>
-		int getSize() const { return size; }<br>
-		void setSize(int newSize) { size = newSize; }<br>
-<br>
-		// pure virtual functions awaits implementation<br>
-		virtual int evaluate() = 0;<br>
-		virtual void crossover(int count) = 0;<br>
-		virtual void mutate(double prob) = 0;<br>
-	};<br>
-<br>
-	#endif // Population_H<br>
+<script type="syntaxhighlighter" class="brush: cpp; toolbar: false;"><![CDATA[
+	#ifndef ParaException
+	#define ParaException
+
+	class ParameterAgainstNatureException : public std::exception {
+	public:
+		virtual const char* what() const noexcept override { 
+			return "Something goes against nature. Object cannot be casted.";
+		}
+	};
+	#endif // ParaException
+
+	#ifndef Population_H
+	#define Population_H
+
+	#include <iostream>
+	#include <cstdlib>
+	#include <time.h>
+
+	class Population {
+		/*
+		* note that the chromosomes should be declared in the derived class, due to the various approaches
+		* in various problems, we cannot generalize chromosome type in the mother abstract class
+		*/
+
+		int size; // population size, number of chromosomes in the system
+	public:
+		// class constructor
+		Population(int size) {
+			if (size <= 0) throw ParameterAgainstNatureException();
+
+			this->size = size; 
+		} 
+		virtual ~Population() { }
+
+		int getSize() const { return size; }
+		void setSize(int newSize) { size = newSize; }
+
+		// pure virtual functions awaits implementation
+		virtual int evaluate() = 0;
+		virtual void crossover(int count) = 0;
+		virtual void mutate(double prob) = 0;
+	};
+
+	#endif // Population_H
+]]></script>
