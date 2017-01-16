@@ -28,16 +28,13 @@
 
 	public:
 		// class constructor: construct a dynamic array of genes
-		Chromosome1D(int geneCount) {
-			if(geneCount <= 0) throw ParameterAgainstNatureException();
-			this->geneCount = geneCount;
-			genes = new E[geneCount];
+        Chromosome1D(int geneCount) {
+            if(geneCount <= 0) throw ParameterAgainstNatureException();
+            this->geneCount = geneCount;
+            genes = new E[geneCount];
 
-			for (int i=0; i < geneCount; i++)
-				genes[i] = (int)((rand()%geneCount));
-
-			this->fitness = -1; //fitness unknown
-		}
+            this->fitness = -1; //fitness unknown
+        }
 
 		Chromosome1D(const Chromosome1D *other)
 				: fitness(other->fitness), geneCount(other->geneCount), genes(new E[other->geneCount]) {
