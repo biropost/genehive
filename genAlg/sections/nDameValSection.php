@@ -5,11 +5,11 @@
 
                     <div class="form-group ">  
                                         
-                       <input type="N-value" class="input-lg form-control dnainput" id="N_value" placeholder="N-value" value="<?=$_POST['n']?>">
-                       <input type="population size" class="input-lg form-control dnainput" id="population_size" placeholder="population size" value="<?=$_POST['popsize']?>">
-                       <input type="generation count" class="input-lg form-control dnainput" id="generation_count" placeholder="generation count" value="<?=$_POST['gencnt']?>">
-                       <input type="tournament size" class="input-lg form-control dnainput" id="tournament_size" placeholder="tournament size" value="<?=$_POST['tmsize']?>">
-                       <input type="mutation probability" class="input-lg form-control dnainput" id="mutation_prob" placeholder="mutation probability" value="<?=$_POST['mutprob']?>">
+                       <input type="N-value" class="input-lg form-control dnainput" id="N_value" placeholder="N-value" name="n">
+                       <input type="population size" class="input-lg form-control dnainput" id="population_size" placeholder="population size" name="popsize">
+                       <input type="generation count" class="input-lg form-control dnainput" id="generation_count" placeholder="generation count" name="gencnt">
+                       <input type="tournament size" class="input-lg form-control dnainput" id="tournament_size" placeholder="tournament size" name="tmsize">
+                       <input type="mutation probability" class="input-lg form-control dnainput" id="mutation_prob" placeholder="mutation probability" name="mutprob">
                        <button type="submit" class="btn btn-lg btn-default">go!</button>   
                                                                              
                     </div>
@@ -20,10 +20,9 @@
         </div>
 
     <?php
-        #include('genAlg/genAlg_Code/Environment.php');
-        require_once('genAlg/genAlg_Code/Environment.php');
+        include('src/Environment.php');
 
-        if (!empty($_POST)) {
+        if( $_SERVER['REQUEST_METHOD'] == 'POST') {
             $n = $_POST['n'] + 0;
             if ($n > 30) # set maximum n
                 $n = 30;
@@ -50,10 +49,12 @@
 
             $nqueen->natSelection($gencnt, $tmsize, true, $mutprob);
 
-            if ($nqueen->getAnswer())
-                echo $nqueen->getStrAnswer();
-            else
+            if ($nqueen->getAnswer()) {
+                $strAnswer = $nqueen->getStrAnswer();
+                echo $strAnswer;
+            } else {
                 echo "meh";
+            }
         }
     ?>
 

@@ -1,9 +1,9 @@
 <?php include("Environment.php"); ?>
 <?php
 
-$n = 11;
-$popsize = 2;
-$gencnt = 2;
+$n = 4;
+$popsize = 200;
+$gencnt = 200;
 $tmsize = 2;
 $mutprob = 0.2;
 
