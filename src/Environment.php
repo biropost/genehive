@@ -10,15 +10,10 @@ class Environment {
 
     public function natSelection($cycleCount, $tmSize, $isElitist, $mutProb) {
         while ($this->crowd->evaluate() != 0 && --$cycleCount >= 0) {
-            $start = microtime(true);
             $this->crowd->populationSelection($tmSize, $isElitist);
             $this->crowd->crossover($this->crowd->getSize());
             $this->crowd->mutate($mutProb);
-            $time_elapsed_secs = microtime(true) - $start;
-            echo $cycleCount . ": " . $this->crowd->getBest()->getFitness() . " " . $time_elapsed_secs . "\n";
-            echo $this->crowd->getBest()->__toString();
         }
-        echo "Finished: " . $this->crowd->getBest()->getFitness() . "\n";
     }
 
     public function getAnswer() {
