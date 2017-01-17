@@ -18,6 +18,14 @@
         <div class="row" style="padding-top:40px; padding-bottom:40px; background-color:#fdfdfd;">
         	<div class="container">
 
+	            <div class=" col-xs-12">           	
+	       				<h2>Ablauf - das natürliche Vorbild</h2>
+						<p>Hier wenden wir uns an ein natürliches Vorbild, die Pheromonspur von Ameisen.</p>      
+	            </div>	
+	            	           <div class="col-xs-12">
+          	
+	              <img class="col-xs-8 col-xs-offset-4" src="css/img/ACOant.png">			
+	            </div>
       
 	        </div>
         </div>
