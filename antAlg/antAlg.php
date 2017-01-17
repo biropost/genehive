@@ -1,5 +1,5 @@
    
-        <div class="intro-body-ant">
+        <div class="intro-body-ant" style="margin-top:60px;">
             <div id="Intro" class="container">
                 <div class="row">
                     <div class="col-xs-offset-2 col-xs-8 col-md-8 col-md-offset-2">
@@ -16,10 +16,10 @@
                 </div>
             </div>
         </div>
-       <section id="description" class="content-section text-center">
+       <section id="description" class="content-section text-center container">
             <?php include('antAlg/sections/ShortestPathSection.php');?>
         </section>
         <!-- AntAlgCodeSection -->
-        <section id="documentation" class="content-section text-center">
+        <section id="documentation" class="content-section text-center container">
             <?php include('antAlg/sections/AntAlgCodeSection.php');?>
         </section>

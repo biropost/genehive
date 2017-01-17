@@ -18,20 +18,21 @@
         </div>
 </div>
     
+
 <!-- About nDameSection -->
-    <section id="N-Dame" class="content-section">
+    <section id="N-Dame" class="content-section container">
         <?php include('genAlg/sections/nDameSection.php');?>
     </section>
 <!-- /.About nDameSection -->
 
 <!-- DIY nDameValSection -->
-    <section id="DIY" class="content-section text-center">
+    <section id="DIY" class="content-section text-center container">
         <?php include('genAlg/sections/nDameValSection.php');?>
     </section>
 <!-- /.DIY nDameValSection -->
 
 <!-- GenAlgCodeSection -->
-    <section id="documentation" class="content-section text-center">
+    <section id="documentation" class="content-section text-center container">
         <?php include('genAlg/sections/GenAlgCodeSection.php');?>
     </section>
 <!-- /.GenAlgCodeSection -->

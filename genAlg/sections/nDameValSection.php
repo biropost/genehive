@@ -66,7 +66,7 @@
                 # echo "<br>";
             } else {
                 $answer = "<br><div class=\"row\" style=\"padding-top: 40px;\"><div class=\"alert alert-danger col-xs-8 col-xs-offset-2\">";
-                $answer .= "Keine Lösung wurde gefunden!";
+                $answer .= "Keine Lösung wurdes gefunden!";
                 $answer .= "</div></div>";
 
                 echo $answer . "<br>";
