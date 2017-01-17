@@ -5,11 +5,11 @@
 
                     <div class="form-group ">  
                                         
-                       <input type="N-value" class="input-lg form-control dnainput" id="N_value" placeholder="N-value" name="n">
-                       <input type="population size" class="input-lg form-control dnainput" id="population_size" placeholder="population size" name="popsize">
-                       <input type="generation count" class="input-lg form-control dnainput" id="generation_count" placeholder="generation count" name="gencnt">
-                       <input type="tournament size" class="input-lg form-control dnainput" id="tournament_size" placeholder="tournament size" name="tmsize">
-                       <input type="mutation probability" class="input-lg form-control dnainput" id="mutation_prob" placeholder="mutation probability" name="mutprob">
+                       <input type="N-value" class="input-lg form-control dnainput" id="N_value" placeholder="N-value" name="n" required>
+                       <input type="population size" class="input-lg form-control dnainput" id="population_size" placeholder="population size" name="popsize" required>
+                       <input type="generation count" class="input-lg form-control dnainput" id="generation_count" placeholder="generation count" name="gencnt" required>
+                       <input type="tournament size" class="input-lg form-control dnainput" id="tournament_size" placeholder="tournament size" name="tmsize" required>
+                       <input type="mutation probability" class="input-lg form-control dnainput" id="mutation_prob" placeholder="mutation probability" name="mutprob" required>
                        <button type="submit" class="btn btn-lg btn-default">go!</button>   
                                                                              
                     </div>
