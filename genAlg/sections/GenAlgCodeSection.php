@@ -98,7 +98,7 @@
 </div>
 <br>
 <br>
-<button class="btn btn-lg btn-default"><a href="/Users/biropo/Sites/genehive/genAlg_Code">Hier herunterladen</a></button>
+<a class="btn btn-lg btn-default" href="genAlg/genAlg_Code/nq_cpp.zip" target="_blank">Hier herunterladen</a>
 
 </div><!-- /container -->
 <!-- old version
