@@ -16,7 +16,9 @@
                 </div>
             </div>
         </div>
-
+       <section id="documentation" class="content-section text-center">
+            <?php include('antAlg/sections/ShortestPathSection.php');?>
+        </section>
         <!-- AntAlgCodeSection -->
         <section id="documentation" class="content-section text-center">
             <?php include('antAlg/sections/AntAlgCodeSection.php');?>

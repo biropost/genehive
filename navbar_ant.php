@@ -1,5 +1,5 @@
 <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-ant navbar-fixed-top" role="navigation">
         <div class="container">
 
             <!-- The navbar-header goes here -->
