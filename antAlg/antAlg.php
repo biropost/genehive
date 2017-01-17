@@ -1,6 +1,6 @@
    
         <div class="intro-body-ant">
-            <div class="container">
+            <div id="Intro" class="container">
                 <div class="row">
                     <div class="col-xs-offset-2 col-xs-8 col-md-8 col-md-offset-2">
                         <h1 class="ant-heading brand-heading" style="color:black; font-family:Besom; font-size 60%;">ant <br>Algorithm</h1>
@@ -16,7 +16,7 @@
                 </div>
             </div>
         </div>
-       <section id="documentation" class="content-section text-center">
+       <section id="description" class="content-section text-center">
             <?php include('antAlg/sections/ShortestPathSection.php');?>
         </section>
         <!-- AntAlgCodeSection -->

@@ -51,21 +51,28 @@
 
             if ($nqueen->getAnswer()) {
                 $strAnswer = $nqueen->getStrAnswer();
-                echo $strAnswer . "<br>";
+
+                $answer = "<br><div class=\"row\" style=\"padding-top: 40px;\"><div class=\"alert alert-success col-xs-8 col-xs-offset-2\">";
+                $answer .= $strAnswer;
+                $answer .= "</div></div>";
+
+                echo $answer . "<br>";
 
                 # this is just in case you need each values
                 # it is an array with the size of n
                 #so, have fun decorating :) i'm counting on you
-                for($i=0; $i<$n; $i++)
-                    echo $nqueen->getAnswer()[$i] . " ";
-                echo "<br>";
+                # for($i=0; $i<$n; $i++)
+                #    echo $nqueen->getAnswer()[$i] . " ";
+                # echo "<br>";
             } else {
-                echo "meh";
+                $answer = "<br><div class=\"row\" style=\"padding-top: 40px;\"><div class=\"alert alert-danger col-xs-8 col-xs-offset-2\">";
+                $answer .= "Keine Lösung wurde gefunden!";
+                $answer .= "</div></div>";
+
+                echo $answer . "<br>";
             }
         }
     ?>
 
 
-
-<?php include("progressbar.php");?>
 </div>

@@ -20,10 +20,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#N-Dame"  style="color:black">Intro</a>
+                        <a class="page-scroll" href="#Intro"  style="color:black">Intro</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#DIY" style="color:black">DIY</a>
+                        <a class="page-scroll" href="#description" style="color:black">description</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#documentation" style="color:black">documentation</a>
