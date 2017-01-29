@@ -56,6 +56,32 @@
                 $answer .= $strAnswer;
                 $answer .= "</div></div>";
 
+
+
+                 for ($i=0; $i < $n; $i++) { 
+                    for ($o=0; $o < $n; $o++) { 
+                        if ($o%2 = 1) {
+                            if ($o = /*array[o]*/) {
+                                echo ('green_queen.svg');
+                            }
+                            else {
+                                echo ('green_field.svg');
+                            }
+                        }
+                        else {
+                            if ($o = /*array[o]*/) {
+                                echo ('grey_queen.svg');
+                            }
+                            else {
+                                echo ('grey_field.svg');
+                            }
+
+                        }
+                    }
+                    echo "<br>";
+                }
+                
+
                 echo $answer . "<br>";
 
                 # this is just in case you need each values
